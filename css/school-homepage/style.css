@@ -44,7 +44,131 @@
   
   /* WRITE YOUR CODE BELOW HERE */
 
-  html{
-    font-family: serif;
-    font-size: 10px;
-  }
+  /*IBM Plex Serif
+    link: https://fonts.google.com/specimen/IBM+Plex+Serif/about
+    
+    Happy Times at the ikob
+    link: https://www.fontsquirrel.com/fonts/happy-times-at-the-ikob
+  */
+
+
+@font-face {
+  font-family: 'IBM_Plex_Serif';
+  src: url(fonts/IBM_Plex_Serif/IBMPlexSerif-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'happy-times-at-the-ikob';
+  src: url(fonts/happy-times-at-the-ikob/happy-times-at-the-ikob.otf) ;
+  font-weight: normal;
+  font-style: normal;
+}
+
+html{
+  font-family: IBM_Plex_Serif, serif;
+  font-size: 10px;
+  
+}
+
+h1,
+h2{
+  font-family: happy-times-at-the-ikob, sans-serif;
+  letter-spacing: 2px;
+}
+
+h1{
+  font-size: 4rem;
+  text-align: center;
+}
+
+h2{
+  font-size: 3rem;
+}
+
+p,
+li {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
+}
+
+
+section h2 + p {
+  text-indent: 20px;
+}
+
+
+/* Links */
+
+a:link{
+  color: rgb(170, 102, 102);
+  outline: none;
+}
+
+a:visited{
+  color: rgba(165, 98, 98, 0.438);
+}
+
+a:focus,
+a:hover{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:active {
+  color: rgb(218, 42, 42);
+  font-weight: bold;
+}
+a[href*="http"] {
+  padding-right: 20px;
+  background: url(external-link-52.png) no-repeat 100% 0;
+  background-size: 16px 16px;
+}
+
+/*list*/
+ul, ol {
+  margin: 1.6rem 0;
+}
+
+ul{
+  list-style-type: square;
+}
+
+ol{
+  list-style-type: lower-greek;
+}
+
+/*nav*/
+nav ul{
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+nav li {
+  list-style-type: none;
+  margin-bottom: 2rem;
+}
+
+nav li a{
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  font-size: 2rem;
+  border: 1px solid rgb(170, 102, 102);
+}
+
+nav li a:focus,
+nav li a:hover{
+  font-weight: bold;
+  color: white;
+  background-color: #a66;
+}
+
+nav li a:active{
+  color: white;
+  background-color: black;
+}
